@@ -10,3 +10,4 @@ public class Objeto {
         nueva.imprimi();
     }
 }
+//Prueba
