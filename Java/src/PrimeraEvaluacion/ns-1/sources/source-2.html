@@ -1,0 +1,138 @@
+
+
+
+<!DOCTYPE html>
+<html id="htmlId">
+<head>
+  <meta http-equiv="Content-Type" content="text/html;charset=windows-1252"> 
+  <title>Coverage Report > Main</title>
+  <style type="text/css">
+    @import "../../css/coverage.css";
+    @import "../../css/idea.min.css";
+  </style>
+  <script type="text/javascript" src="../../js/highlight.min.js"></script>
+  <script type="text/javascript" src="../../js/highlightjs-line-numbers.min.js"></script>
+</head>
+
+<body>
+<div class="content">
+<div class="breadCrumbs">
+Current scope:     <a href="../../index.html">all classes</a>
+    <span class="separator">|</span>
+    <a href="../index.html">ClaseSeis.Excepciones</a>
+</div>
+
+<h1>Coverage Summary for Class: Main (ClaseSeis.Excepciones)</h1>
+
+<table class="coverageStats">
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Class, %
+</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">Main</td>
+<td class="coverageStat">
+  <span class="percent">
+    100%
+  </span>
+  <span class="absValue">
+    (1/1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    50%
+  </span>
+  <span class="absValue">
+    (1/2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    80%
+  </span>
+  <span class="absValue">
+    (12/15)
+  </span>
+</td>
+</tr>
+
+</table>
+
+<br/>
+<br/>
+
+
+<pre>
+<code class="sourceCode" id="sourceCode">&nbsp;package ClaseSeis.Excepciones;
+&nbsp;
+&nbsp;import java.util.InputMismatchException;
+&nbsp;import java.util.Scanner;
+&nbsp;
+<b class="nc">&nbsp;public class Main {</b>
+&nbsp;
+&nbsp;    public static void main (String[] args){
+<b class="fc">&nbsp;        Scanner input = new Scanner(System.in);</b>
+<b class="fc">&nbsp;        System.out.println(&quot;Calculadora sencilla&quot;);</b>
+&nbsp;        double numero1;
+&nbsp;        double numero2;
+&nbsp;        char operacion;
+&nbsp;
+&nbsp;        try {
+&nbsp;
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(&quot;Ingrese el primer numero&quot;);</b>
+<b class="fc">&nbsp;        numero1 = input.nextDouble();</b>
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(&quot;Ingrese el segundo numero&quot;);</b>
+<b class="fc">&nbsp;        numero2 = input.nextDouble();</b>
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(&quot;Ingrese la operacion &#39;+&#39; &#39;-&#39; &#39;/&#39; &#39;*&#39;&quot;);</b>
+<b class="fc">&nbsp;        operacion = input.next().charAt(0);</b>
+<b class="nc">&nbsp;            }catch ( InputMismatchException e ){</b>
+<b class="nc">&nbsp;            throw new RuntimeException(&quot;Dato ingresado no valido&quot;);</b>
+<b class="fc">&nbsp;        }</b>
+<b class="fc">&nbsp;        Calculadora calcular = new Calculadora();</b>
+<b class="fc">&nbsp;        double resultado = calcular.calcular(numero1, numero2, operacion);</b>
+&nbsp;
+<b class="fc">&nbsp;        System.out.println(&quot;El resultado es &quot; + resultado);</b>
+&nbsp;    }
+&nbsp;}
+</code>
+</pre>
+</div>
+
+<script type="text/javascript">
+(function() {
+    var msie = false, msie9 = false;
+    /*@cc_on
+      msie = true;
+      @if (@_jscript_version >= 9)
+        msie9 = true;
+      @end
+    @*/
+
+    if (!msie || msie && msie9) {
+      hljs.highlightAll()
+      hljs.initLineNumbersOnLoad();
+    }
+})();
+</script>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2023-12-20 20:43</div>
+</div>
+</body>
+</html>
